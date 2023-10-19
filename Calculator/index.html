@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="display">
+        <input type="text" id="display" readonly>
+    <button onclick="clearDisplay()" class="ac">AC</button>
+    </div>
+    
+    <div class="buttons">
+      <div class="firstrow">
+        <button onclick="appendToDisplay('7')">7</button>
+      <button onclick="appendToDisplay('8')">8</button>
+      <button onclick="appendToDisplay('9')">9</button>
+      <button  class="grey"onclick="appendToDisplay('+')">+</button>
+      </div>
+      <div class="secondrow">
+        <button onclick="appendToDisplay('4')">4</button>
+      <button onclick="appendToDisplay('5')">5</button>
+      <button onclick="appendToDisplay('6')">6</button>
+      <button class='grey'onclick="appendToDisplay('-')">-</button>
+      </div>
+      <div class="thirdrow">
+        <button onclick="appendToDisplay('1')">1</button>
+      <button onclick="appendToDisplay('2')">2</button>
+      <button onclick="appendToDisplay('3')">3</button>
+      <button  class='grey'onclick="appendToDisplay('*')">*</button>
+       
+      </div>
+      <div class="forthrow">
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="calculateResult()" class="equal-button">=</button>
+        <button class="grey" onclick="appendToDisplay('/')">/</button></div>
+      
+      </div>
+     
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
